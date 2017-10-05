@@ -11,16 +11,13 @@ export default class Map extends Component {
       people: Data.people,
       content: Data.content,
     };
-    console.log('constructor');
-    console.log(this.state.people);
   }
 
   render() {
 
     const { people } = this.state;
-    
     const PeopleComponents = people.map((person) => {
-      return <img key={person.avatar} src={person.avatar}/>;
+      return <Person key={person.avatar} person={person}/>;
     });
 
     return (
