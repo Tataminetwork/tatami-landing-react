@@ -1,8 +1,8 @@
-@import "../../../../styles/variables";
-@import "../../../../styles/animations";
+@import "../styles/variables";
+@import "../styles/animations";
 
 .map-item {
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.5s ease-in-out;
   height: auto;
   position: absolute;
@@ -89,14 +89,14 @@
   }
 
 
-  .map-item__bubble.ng-hide {
+  .map-item__bubble.--hidden {
     -webkit-transform: scale(0);
   }
 
-  .map-item__bubble.ng-hide-add,
-  .map-item__bubble.ng-hide-remove {
-    display: block!important;
-  }
+  // .map-item__bubble.ng-hide-add,
+  // .map-item__bubble.ng-hide-remove {
+  //   display: block!important;
+  // }
 
   .map-item__bubble::before {
     z-index: -1;

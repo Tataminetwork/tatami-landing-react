@@ -1,0 +1,22 @@
+// Bootstrap 4 core variables and mixins
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// end bootstrap
+
+// Tatami
+@import "styles/type";
+@import "styles/buttons";
+@import "styles/forms";
+
+// Components
+@import "components/Person.css";
+
+html, body {
+  height: 100%;
+}
+
+.map {
+  &__background {
+    width: 100%;
+  }
+}

@@ -1,0 +1,8 @@
+@import "variables";
+
+.rounded-container {
+  background-color: $white;
+  border: 2px solid $light-gray;
+  border-radius: $border-radius;
+  display: inline-block;
+}

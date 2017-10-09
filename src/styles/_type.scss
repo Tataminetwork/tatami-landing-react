@@ -1,0 +1,26 @@
+@import "variables";
+
+body {
+  // font-family: 'Varela Round', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: $text-color;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: inherit;
+  font-weight: 400;
+}
+
+
+p {
+  font-weight: 300;
+}
+
+.text-muted {
+  color: $text-muted;
+}

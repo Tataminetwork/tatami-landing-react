@@ -13,17 +13,25 @@ export default class Map extends Component {
     };
   }
 
-  render() {
+  handleQuestion(senderIndex,requestId) {
+    console.log(senderIndex,requestId);    
+  }
+ 
 
+  render() {
     const { people } = this.state;
-    const PeopleComponents = people.map((person) => {
-      return <Person key={person.avatar} person={person}/>;
+    const PeopleComponents = people.map((person, index) => {
+      return <Person key={index}
+                     index={index}
+                     handleQuestion={this.handleQuestion.bind(this)} 
+                     person={person}/>;
     });
 
     return (
       <div className="container">
         <div className="row">
-          <div className="col-md-12 map">
+          <div className="col map">
+            <img className="map__background" src="images/map.png" />
             {PeopleComponents}
           </div>
         </div>
@@ -31,4 +39,3 @@ export default class Map extends Component {
     );
   }
 }
-// <img className="map__background" src={map} />
